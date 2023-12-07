@@ -1,4 +1,7 @@
-<div id="app">
+<mat-toolbar> 
+  Gestion commerciale
+</mat-toolbar>
+<!--div id="app">
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <a href="#" class="navbar-brand">bezKoder</a>
     <ul class="navbar-nav mr-auto" routerLinkActive="active">
@@ -33,9 +36,19 @@
         <a href class="nav-link" (click)="logout()">LogOut</a>
       </li>
     </ul>
-  </nav>
+  </nav-->
 
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+  <!--div class="container"-->
+  <mat-sidenav-container>
+    <mat-sidenav>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+    
+  <!--/div-->
+<!--/div-->
