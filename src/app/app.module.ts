@@ -12,11 +12,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
-import {MatIconModule} from '@angular/material/icon';
+
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+//Material ui Importations
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    
+
     
   ],
   imports: [
@@ -35,7 +40,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
